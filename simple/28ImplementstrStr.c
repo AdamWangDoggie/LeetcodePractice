@@ -1,3 +1,5 @@
+// https://leetcode-cn.com/problems/implement-strstr/description/
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>

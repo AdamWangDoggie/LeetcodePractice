@@ -1,3 +1,5 @@
+// https://leetcode-cn.com/problems/remove-element/description/
+
 void pullNums(int* nums, int start, int end){
     for(int i = start; i<end; i++){
         nums[i] = nums[i+1];
