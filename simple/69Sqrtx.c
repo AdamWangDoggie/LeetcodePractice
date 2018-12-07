@@ -13,7 +13,7 @@ int mySqrt(int x) {
         if( tmp * tmp > input ){ max = tmp; continue; }  // 更新区间
         if( tmp * tmp < input ){
             if( (tmp + 1) * (tmp + 1) > input){ return tmp;}
-            else if ( (tmp + 1)*(tmp + 1)==input ){ return tmp + 1;}
+            else if ( (tmp + 1)*(tmp + 1)==input ){ return tmp + 1;} // 针对输入为1时无法跳出循环
             else{ min = tmp; continue; }
         }
     }
