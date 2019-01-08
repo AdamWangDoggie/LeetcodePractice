@@ -3,10 +3,10 @@
 #include <memory.h>
 #include <stdio.h>
 
+// 只需要维护start的位置就好了, start->index是子串的范围, 
 int lengthOfLongestSubstring(char* s) {
     int exists[256];
     memset(exists, -1, 256*sizeof(int));
-    
     int index=0, start=0, ret=0;
     while (s[index] != '\0'){
         char ord_c = s[index];
@@ -14,13 +14,11 @@ int lengthOfLongestSubstring(char* s) {
             exists[ord_c] = index;  // 记下这个字符的索引
             if(index-start + 1> ret){
                 ret = index-start + 1;
-                printf("");
             }
             index++;
         }
         else {
             start = exists[ord_c] + 1;
-            exists[ord_c] = -1;
         }
         
     }
@@ -28,7 +26,7 @@ int lengthOfLongestSubstring(char* s) {
 }
 
 int main(){
-    int len = lengthOfLongestSubstring("abba");
+    int len = lengthOfLongestSubstring("abcabcabb");
 
     return 1;
 }
