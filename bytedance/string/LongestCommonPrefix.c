@@ -1,3 +1,5 @@
+// 最长公共子前缀
+// 比较简单, 所有字符串同步遍历比较
 int commonIndex(char ** strs, int strsSize, char* sentinel){
     for(int i=0;;i++){
         if(sentinel[i]=='\0'){

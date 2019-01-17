@@ -1,3 +1,5 @@
+// 简化路径, 简单, 做好边界条件的处理
+
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>

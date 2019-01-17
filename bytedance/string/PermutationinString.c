@@ -1,3 +1,6 @@
+// 字符串的排列: 判断字符串2中是否存在字符串1的排列, 思路较巧
+// 包含了无重复最大子串的思路, 详见注释 ,重点在于第三点
+
 #include <stdbool.h>
 #include <stdlib.h>
 #include <memory.h>

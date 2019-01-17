@@ -1,3 +1,6 @@
+// 字符串相乘, 比较简单
+// 全部转化为一位数相乘, 加到目标字符串上, 处理好进位
+
 #include <strings.h>
 #include <stdlib.h>
 #include <memory.h>
