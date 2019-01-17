@@ -39,7 +39,7 @@ int** threeSum(int* nums, int numsSize, int* returnSize) {
     array * ret = get_array();
 
     for(int i = 0; i < numsSize - 2; i++){
-        if(i>0 && nums[i] == nums[i-1]){ continue; }
+        if(i>0 && nums[i] == nums[i-1]){ continue; } // 拿到下一个不一样的i
         int j = i+1, k = numsSize - 1;
         while(j < k){
             int cur_sum = nums[i] + nums[j] + nums[k];
@@ -49,10 +49,10 @@ int** threeSum(int* nums, int numsSize, int* returnSize) {
                 append(ret, e);
                 j++; k--;
                 while(j < k && nums[j] == nums[j-1]){
-                    j--;
+                    j++; // 拿到下一个不一样的j
                 }
                 while(j < k && nums[k] == nums[k + 1]){
-                    k--;
+                    k--;  // 拿到下一个不一样的k
                 }
             } else if(cur_sum > 0){
                 k--;
