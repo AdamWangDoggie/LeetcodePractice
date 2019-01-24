@@ -1,5 +1,5 @@
 # LeetcodePractice
-Record Complete Code for Leetcode
+Complete Code for Leetcode
 
 ### To myself: 
 *At least*(one of below):
